@@ -1,0 +1,5 @@
+ROUTINE test
+    set st = ##class(abc.python).connectToGateway("pogs",.GW)
+    set person = ##class(%Net.Remote.Object).%New(GW,"PersonDemo.Person")
+    write !,"Default values: ",person.displayPerson()
+    return

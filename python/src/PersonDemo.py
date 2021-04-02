@@ -1,4 +1,6 @@
 from Company import Company
+from math import cos,sin,tan
+import numpy as np
 
 class Person:
 
@@ -24,5 +26,7 @@ class Person:
     self._age = newAge
 
   def displayPerson(self):
-    return "name: " + self.name + ", age: " + self.age
+    arr1 = np.array([-3.7, -1.2, 0.5, 4.5])
+    return "name: " + self.name + ", age: " + self.age + "," + self.company.displayEmployer() + "," + "{0}".format(cos(1)) + "," + str(arr1[0])
+
 

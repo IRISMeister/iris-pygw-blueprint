@@ -1,11 +1,11 @@
-version: '3.6'
+version: '3.7'
 services:
     iris:
         build: iris/.
         image: irispgw:latest
         restart: always
         hostname: 'iris'
-        cpuset: "0"
+        #cpuset: "0"
         init: true
         expose:
             - '1972'

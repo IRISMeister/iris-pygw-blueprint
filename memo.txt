@@ -1,0 +1,4 @@
+docker-compose build
+docker-compose up -d
+docker-compose exec iris iris session iris -U python
+PYTHON>d ^test
